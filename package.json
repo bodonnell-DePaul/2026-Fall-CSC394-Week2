@@ -1,0 +1,20 @@
+{
+  "name": "csc394-week-02-lecture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CSC 394 Week 2 lecture, generated from one Marp Markdown source.",
+  "scripts": {
+    "build": "npm run build:html && npm run build:pptx",
+    "build:html": "marp --html week-02-deck.md --output week-02-deck.html",
+    "build:pptx": "marp --html week-02-deck.md --pptx --output week-02-deck.pptx"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.2.3"
+  },
+  "overrides": {
+    "puppeteer-core": "24.37.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
